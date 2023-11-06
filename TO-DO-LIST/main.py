@@ -1,8 +1,10 @@
 arr = []
 
+
 def display(arr):
     for i in range(len(arr)):
-        print(str(i+1) + ": " +  arr[i])
+        print(str(i+1) + ": " + arr[i])
+
 
 def create():
     print()
@@ -12,7 +14,8 @@ def create():
     display(arr)
     print()
     print("Your task has been successfully added to the list!")
-    
+
+
 def update():
     print()
     print("Please Select the task number you want to update from the list.")
@@ -27,6 +30,7 @@ def update():
     print()
     print("Your task is updated successfully!")
 
+
 def delete():
     print()
     print("Please Select the task number you want to Delete from the list.")
@@ -40,25 +44,25 @@ def delete():
     print()
     print("Your task is deleted successfully!")
 
+
 print("Welcome To your TO-DO-LIST!!")
 print()
 
-def welcomeMsg():
-    print("Availaible Operation")
+
+def welcomemsg():
+    print("Available Operation")
     print("0: Exit")
     print("1: Create")
     print("2: Update")
     print("3: Delete")
     print("4: Clear List")
 
-welcomeMsg()
+
+welcomemsg()
 
 while True:
-    
     print()
-    
     opt = input("Select a number from above options: ")
-
     if opt == '0' or opt == 'Exit' or opt == 'exit':
         print()
         print("Thank you for using TO-DO-LIST!!")
@@ -75,6 +79,6 @@ while True:
         print()
         display(arr)
     else:
-        print("Enter a valid input! Recommeded to select from the below options.")
+        print("Enter a valid input! Recommended to select from the below options.")
         print()
-        welcomeMsg()
+        welcomemsg()
