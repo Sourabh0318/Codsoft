@@ -6,7 +6,7 @@ root = Tk()
 root.title("To-Do-List")
 # root.geometry is used to give the width and height of the workspace/app
 root.geometry("600x600")
-
+root.config(bg="#F3EEEA")
 # Define fonts
 my_font = Font(family="Times New Roman", size=30, weight="bold")
 
@@ -40,7 +40,7 @@ my_list.config(yscrollcommand=my_scroll.set)
 my_scroll.config(command=my_list.yview)
 
 # created entry box to add items to the list
-my_entry = Entry(root, width="26", font=("Helvetica", 15))
+my_entry = Entry(root, width=26, font=("Helvetica", 15))
 my_entry.pack(pady=20)
 
 # Created a button frame
@@ -58,8 +58,8 @@ def add_item():
 
 
 # Added Some buttons
-delete_button = Button(button_frame, text="Delete Item", command=delete_item)
-add_button = Button(button_frame, text="Add Item", command=add_item)
+delete_button = Button(button_frame, text="Delete Item", bg="#2B3499", fg="#DDF2FD", border=0, padx=8, pady=5, command=delete_item)
+add_button = Button(button_frame, text="Add Item", bg='#2B3499', fg="#DDF2FD", border=0, padx=8, pady=5, command=add_item)
 
 
 delete_button.grid(row=0, column=0)
