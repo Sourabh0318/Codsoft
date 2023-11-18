@@ -1,7 +1,7 @@
 from tkinter import *
 
 root = Tk()
-root.geometry("372x470")
+root.geometry("372x550")
 
 equation = ""
 
@@ -43,17 +43,17 @@ Button(root, text="8", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg
 Button(root, text="9", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("9")).place(x=190, y=190)
 Button(root, text="-", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("-")).place(x=280, y=190)
 
-Button(root, text="4", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("4")).place(x=10, y=190)
-Button(root, text="5", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("5")).place(x=100, y=190)
-Button(root, text="6", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("6")).place(x=190, y=190)
-Button(root, text="+", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("+")).place(x=280, y=190)
+Button(root, text="4", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("4")).place(x=10, y=280)
+Button(root, text="5", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("5")).place(x=100, y=280)
+Button(root, text="6", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("6")).place(x=190, y=280)
+Button(root, text="+", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("+")).place(x=280, y=280)
 
-Button(root, text="1", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("1")).place(x=10, y=280)
-Button(root, text="2", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("2")).place(x=100, y=280)
-Button(root, text="3", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("3")).place(x=190, y=280)
-Button(root, text="0", width=7, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("0")).place(x=10, y=370)
+Button(root, text="1", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("1")).place(x=10, y=370)
+Button(root, text="2", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("2")).place(x=100, y=370)
+Button(root, text="3", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("3")).place(x=190, y=370)
+Button(root, text="0", width=7, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show("0")).place(x=10, y=460)
 
-Button(root, text=".", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show(".")).place(x=190, y=370)
-Button(root, text="=", width=3, height=3, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#FF9130", command=lambda: calculate()).place(x=280, y=280)
+Button(root, text=".", width=3, height=1, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#526D82", command=lambda: show(".")).place(x=190, y=460)
+Button(root, text="=", width=3, height=3, font=("arial", 30, "bold"), bd="1", fg="#DDE6ED", bg="#FF9130", command=lambda: calculate()).place(x=280, y=370)
 
 root.mainloop()
